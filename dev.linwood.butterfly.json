@@ -68,7 +68,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/LinwoodCloud/Butterfly/releases/download/v1.4.2/linwood-butterfly-linux-alternative.tar.gz",
-                    "sha256": "912db699d2cc8af84a6ec3b82ea3235af37ce88337d86ab18b29516a6932cc26",
+                    "sha256": "f11e8f18946c59a28e785dc16b192e947078bc772d8ce5a9c7ab23db4ead6523",
                     "dest": "FlutterApp"
                 }
             ]
