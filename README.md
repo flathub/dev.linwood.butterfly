@@ -6,7 +6,7 @@
 
 [Source](https://github.com/LinwoodCloud/Butterfly)
 [Website](https://docs.butterfly.linwood.dev)
-[Flathub](https://flathub.org/apps/details/dev.linwood.butterfly
+[Flathub](https://flathub.org/apps/details/dev.linwood.butterfly)
 [Issue Tracker](https://github.com/LinwoodCloud/Butterfly/issues)
 
 </div>
