@@ -15,10 +15,13 @@
     "modules": [
         {
             "name": "libjsoncpp",
-            "buildsystem": "cmake-ninja",
+            "buildsystem": "meson",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=release",
-                "-DBUILD_SHARED_LIBS=on"
+                "--buildtype=release",
+                "--default-library=shared"
+            ],
+            "only_arches": [
+                "x86_64"
             ],
             "sources": [
                 {
