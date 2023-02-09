@@ -15,16 +15,19 @@
     "modules": [
         {
             "name": "libjsoncpp",
-            "buildsystem": "cmake-ninja",
+            "buildsystem": "meson",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DBUILD_SHARED_LIBS=on"
+                "--buildtype=release",
+                "--default-library=shared"
+            ],
+            "only_arches": [
+                "x86_64"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.7.5.tar.gz",
-                    "sha256": "4338c6cab8af8dee6cdfd54e6218bd0533785f552c6162bb083f8dd28bf8fbbe"
+                    "url": "https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz",
+                    "sha256": "f409856e5920c18d0c2fb85276e24ee607d2a09b5e7d5f0a371368903c275da2"
                 }
             ]
         },
@@ -72,14 +75,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/LinwoodCloud/Butterfly/releases/download/v1.6.1/linwood-butterfly-linux-alternative.tar.gz",
-                    "sha256": "9517f3c8535cb3608bc2c6b9502a92af9015d9ee9ee233a1a0731fa99f0325ab",
+                    "url": "https://github.com/LinwoodCloud/Butterfly/releases/download/v1.6.1/linwood-butterfly-linux.tar.gz",
+                    "sha256": "2c10b5c20263304b130adc7b7b02c676a1557f617f06db4b9020cb9fba6f1988",
                     "dest": "FlutterApp",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/LinwoodCloud/Butterfly/releases/latest",
                         "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux-alternative.tar.gz\") | .browser_download_url"
+                        "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux.tar.gz\") | .browser_download_url"
                     }
                 }
             ]
