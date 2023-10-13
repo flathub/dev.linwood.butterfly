@@ -82,7 +82,7 @@
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://docs.butterfly.linwood.dev/meta.json",
-                        "version-query": ".nightly",
+                        "version-query": ".version.nightly",
                         "url-query": "https://github.com/LinwoodDev/Butterfly/releases/download/v$version/linwood-butterfly-linux.tar.gz"
                     }
                 }
