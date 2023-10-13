@@ -81,9 +81,9 @@
                     "dest": "FlutterApp",
                     "x-checker-data": {
                         "type": "json",
-                        "url": "https://api.github.com/repos/LinwoodCloud/Butterfly/releases/latest",
-                        "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux.tar.gz\") | .browser_download_url"
+                        "url": "https://docs.butterfly.linwood.dev/meta.json",
+                        "version-query": ".nightly",
+                        "url-query": "https://github.com/LinwoodDev/Butterfly/releases/download/v$version/linwood-butterfly-linux.tar.gz"
                     }
                 }
             ]
