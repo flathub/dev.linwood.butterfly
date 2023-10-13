@@ -76,14 +76,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v1.6.1/linwood-butterfly-linux.tar.gz",
-                    "sha256": "2c10b5c20263304b130adc7b7b02c676a1557f617f06db4b9020cb9fba6f1988",
+                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.0.0-beta.10/linwood-butterfly-linux.tar.gz",
+                    "sha256": "22de102ea05c9cb1e2442f3fc4041a6dbf48b822f329d7d9a33dd7f0b4c2a426",
                     "dest": "FlutterApp",
                     "x-checker-data": {
                         "type": "json",
-                        "url": "https://api.github.com/repos/LinwoodCloud/Butterfly/releases/latest",
-                        "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux.tar.gz\") | .browser_download_url"
+                        "url": "https://docs.butterfly.linwood.dev/meta.json",
+                        "version-query": ".version.nightly",
+                        "url-query": "\"https://github.com/LinwoodDev/Butterfly/releases/download/v\"+$version+\"/linwood-butterfly-linux.tar.gz\""
                     }
                 }
             ]
