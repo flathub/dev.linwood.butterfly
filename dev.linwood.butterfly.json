@@ -76,8 +76,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.1.1-rc.1/linwood-butterfly-linux-x86_64.tar.gz",
-                    "sha256": "6ca694fbd069b8d0612cf7ad68fd4121ebf5bf5b7d9963bfa68bf1db7b6967a2",
+                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.1.1-rc.2/linwood-butterfly-linux-x86_64.tar.gz",
+                    "sha256": "555a5569be8b522a8f4aa3641459e1a6a088212cbb1f53155149d6090a7d25f3",
                     "dest": "FlutterApp",
                     "x-checker-data": {
                         "type": "json",
