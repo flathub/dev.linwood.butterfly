@@ -1,7 +1,7 @@
 {
     "app-id": "dev.linwood.butterfly",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "23.08",
+    "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "butterfly",
     "separate-locales": false,
@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.1/libsecret-0.21.1.tar.gz",
-                    "sha256": "5106cdb7ef9b74cff5666c982e097f1e6cf44eedd705b5999ce46db1cb55ca7c",
+                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.4/libsecret-0.21.4.tar.gz",
+                    "sha256": "906327ababdf5fd1a209ded21727d7375854971635e2f584290d0d6d9e047bf9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13150,
@@ -76,14 +76,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.2.0-rc.1/linwood-butterfly-linux-x86_64.tar.gz",
-                    "sha256": "353a692a8a9836747c1a650dce7cb7da6e40b2190e168e4885eaaa4ceb66ba8a",
+                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.2.1-rc.0/linwood-butterfly-linux-x86_64.tar.gz",
+                    "sha256": "93ec85f9782ddeffa595b738c7a998e45c8ded90ff7e125308388104e1c1dff5",
                     "dest": "FlutterApp",
                     "x-checker-data": {
                         "type": "json",
-                        "url": "https://docs.butterfly.linwood.dev/meta.json",
-                        "version-query": ".version.nightly",
-                        "url-query": "\"https://github.com/LinwoodDev/Butterfly/releases/download/v\"+$version+\"/linwood-butterfly-linux-x86_64.tar.gz\""
+                        "url": "https://api.github.com/repos/LinwoodDev/Butterfly/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux-x86_64.tar.gz\") | .browser_download_url"
                     }
                 }
             ]
