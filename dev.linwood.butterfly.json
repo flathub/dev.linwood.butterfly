@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.6/libsecret-0.21.6.tar.gz",
-                    "sha256": "c081faf867ae41cbe1af123b882a1bbaaa4785fae7961319a46814fa85a118ac",
+                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.7/libsecret-0.21.7.tar.gz",
+                    "sha256": "944d8a6072b6f285db40b8e9927dbe4dde81dcc7d177f84271fb167ccc297f65",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13150,
