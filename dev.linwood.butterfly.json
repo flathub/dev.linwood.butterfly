@@ -21,9 +21,6 @@
                 "--buildtype=release",
                 "--default-library=shared"
             ],
-            "only_arches": [
-                "x86_64"
-            ],
             "sources": [
                 {
                     "type": "archive",
@@ -68,22 +65,40 @@
                 "chmod +x /app/FlutterApp/butterfly",
                 "mkdir -p /app/bin",
                 "ln -s /app/FlutterApp/butterfly /app/bin/butterfly",
+                "install -Dm644 dev.linwood.butterfly.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/dev.linwood.butterfly.svg",
                 "install -Dm644 /app/FlutterApp/usr/share/metainfo/dev.linwood.butterfly.appdata.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
-                "install -Dm644 /app/FlutterApp/dev.linwood.butterfly.svg -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/",
                 "install -Dm644 /app/FlutterApp/usr/share/applications/dev.linwood.butterfly.desktop -t ${FLATPAK_DEST}/share/applications/",
                 "install -Dm644 /app/FlutterApp/usr/share/mime/packages/dev.linwood.butterfly.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml"
             ],
             "sources": [
                 {
+                    "type": "file",
+                    "path": "icons/dev.linwood.butterfly.svg"
+                },
+                {
                     "type": "archive",
                     "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.3.0-beta.4/linwood-butterfly-linux-x86_64.tar.gz",
                     "sha256": "48b7a54d6fd62f4af03ab6bf8878b848b96aeba3396e8253f6dc82fda7e2e1ad",
                     "dest": "FlutterApp",
+                    "only-arches": ["x86_64"],
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/LinwoodDev/Butterfly/releases/latest",
                         "version-query": ".tag_name",
                         "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux-x86_64.tar.gz\") | .browser_download_url"
+                    }
+                },
+                {
+                    "type": "archive",
+                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.3.0-beta.4/linwood-butterfly-linux-arm64.tar.gz",
+                    "sha256": "a7492602c5e3ea761fc7218009330ea568e3e9618fab14fa4413b285720e4afe",
+                    "dest": "FlutterApp",
+                    "only-arches": ["aarch64"],
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/LinwoodDev/Butterfly/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux-arm64.tar.gz\") | .browser_download_url"
                     }
                 }
             ]
