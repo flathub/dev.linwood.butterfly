@@ -1,21 +1,21 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1841_16)">
-<ellipse cx="170.295" cy="98.1757" rx="54" ry="64" transform="rotate(29.0721 170.295 98.1757)" fill="#EBB733"/>
-<ellipse cx="82.2936" cy="98.1752" rx="54" ry="64" transform="rotate(-29.07 82.2936 98.1752)" fill="#EBB733"/>
-<ellipse cx="82.6892" cy="187.301" rx="30" ry="42" transform="rotate(29.23 82.6892 187.301)" fill="#EBB733"/>
-<ellipse cx="170.69" cy="187.302" rx="30" ry="42" transform="rotate(-29.2308 170.69 187.302)" fill="#EBB733"/>
-<rect x="100" y="96" width="52" height="120" rx="11" fill="#EBB733"/>
-<rect x="100" y="68" width="52" height="136" rx="11" fill="#FCD061"/>
-<path d="M108 114C108 114 115.057 115.86 124 116C133.337 116.146 144 114 144 114" stroke="#302A0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse cx="102" cy="86" rx="18" ry="18" fill="white"/>
-<ellipse cx="102" cy="86" rx="10" ry="10" fill="#302A0B"/>
-<ellipse cx="150" cy="86" rx="18" ry="18" fill="white"/>
-<ellipse cx="150" cy="86" rx="10" ry="10" fill="#302A0B"/>
-<ellipse cx="200" cy="84" rx="8" ry="8" fill="#FCD061"/>
-<ellipse cx="56" cy="84" rx="8" ry="8" fill="#FCD061"/>
+<g clip-path="url(#clip0_1841_2)">
+<ellipse cx="183.368" cy="91.9696" rx="67.5" ry="80" transform="rotate(29.0721 183.368 91.9696)" fill="#EBB733"/>
+<ellipse cx="73.367" cy="91.969" rx="67.5" ry="80" transform="rotate(-29.07 73.367 91.969)" fill="#EBB733"/>
+<ellipse cx="73.8616" cy="203.377" rx="37.5" ry="52.5" transform="rotate(29.23 73.8616 203.377)" fill="#EBB733"/>
+<ellipse cx="183.862" cy="203.377" rx="37.5" ry="52.5" transform="rotate(-29.2308 183.862 203.377)" fill="#EBB733"/>
+<rect x="95.5" y="89.25" width="65" height="150" rx="32.5" fill="#EBB733"/>
+<rect x="95.5" y="54.25" width="65" height="170" rx="32.5" fill="#FCD061"/>
+<path d="M105.5 111.75C105.5 111.75 114.322 114.075 125.5 114.25C137.171 114.433 150.5 111.75 150.5 111.75" stroke="#302A0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="98" cy="76.75" r="22.5" fill="white"/>
+<circle cx="98" cy="76.75" r="12.5" fill="#302A0B"/>
+<circle cx="158" cy="76.75" r="22.5" fill="white"/>
+<circle cx="158" cy="76.75" r="12.5" fill="#302A0B"/>
+<circle cx="220.5" cy="74.25" r="10" fill="#FCD061"/>
+<circle cx="40.5" cy="74.25" r="10" fill="#FCD061"/>
 </g>
 <defs>
-<clipPath id="clip0_1841_16">
+<clipPath id="clip0_1841_2">
 <rect width="256" height="256" fill="white"/>
 </clipPath>
 </defs>
