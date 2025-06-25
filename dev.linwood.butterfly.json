@@ -66,7 +66,7 @@
                 "mkdir -p /app/bin",
                 "ln -s /app/FlutterApp/butterfly /app/bin/butterfly",
                 "install -Dm644 dev.linwood.butterfly.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/dev.linwood.butterfly.svg",
-                "install -Dm644 /app/FlutterApp/usr/share/metainfo/dev.linwood.butterfly.appdata.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
+                "install -Dm644 dev.linwood.butterfly.appdata.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
                 "install -Dm644 /app/FlutterApp/usr/share/applications/dev.linwood.butterfly.desktop -t ${FLATPAK_DEST}/share/applications/",
                 "install -Dm644 /app/FlutterApp/usr/share/mime/packages/dev.linwood.butterfly.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml"
             ],
@@ -74,6 +74,10 @@
                 {
                     "type": "file",
                     "path": "icons/dev.linwood.butterfly.svg"
+                },
+                {
+                    "type": "file",
+                    "path": "dev.linwood.butterfly.appdata.xml"
                 },
                 {
                     "type": "archive",
