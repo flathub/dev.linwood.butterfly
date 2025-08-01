@@ -69,28 +69,31 @@
 	</screenshots>
 	<launchable type="desktop-id">dev.linwood.butterfly.desktop</launchable>
 	<releases>
-		<release version="2.3.2" date="2025-06-23" />
-		<release version="2.3.1" date="2025-05-21" />
-		<release version="2.3.0" date="2025-04-20" />
-		<release version="2.2.4" date="2025-01-13" />
-		<release version="2.2.3" date="2024-12-24" />
-		<release version="2.2.2" date="2024-11-11" />
-		<release version="2.2.1" date="2024-10-17" />
-		<release version="2.2.0" date="2024-09-28" />
-		<release version="2.1.1" date="2024-06-10" />
-		<release version="2.1.0" date="2024-05-10" />
-		<release version="2.0.3" date="2024-02-19" />
-		<release version="2.0.2" date="2024-01-29" />
-		<release version="2.0.1" date="2024-01-15" />
-		<release version="2.0.0" date="2023-12-24" />
-		<release version="1.6.1" date="2023-01-27" />
-		<release version="1.6.0" date="2022-12-24" />
-		<release version="1.5.1" date="2022-10-28" />
-		<release version="1.5.0" date="2022-10-21" />
-		<release version="1.4.1" date="2022-08-05" />
-		<release version="1.4.0" date="2022-08-05" />
-		<release version="1.3.2" date="2022-06-10" />
+		<release version="v2.3.3" date="2025-08-01">
+			<description></description>
+		</release>
+		<release version="2.3.2" date="2025-06-23"/>
+		<release version="2.3.1" date="2025-05-21"/>
+		<release version="2.3.0" date="2025-04-20"/>
+		<release version="2.2.4" date="2025-01-13"/>
+		<release version="2.2.3" date="2024-12-24"/>
+		<release version="2.2.2" date="2024-11-11"/>
+		<release version="2.2.1" date="2024-10-17"/>
+		<release version="2.2.0" date="2024-09-28"/>
+		<release version="2.1.1" date="2024-06-10"/>
+		<release version="2.1.0" date="2024-05-10"/>
+		<release version="2.0.3" date="2024-02-19"/>
+		<release version="2.0.2" date="2024-01-29"/>
+		<release version="2.0.1" date="2024-01-15"/>
+		<release version="2.0.0" date="2023-12-24"/>
+		<release version="1.6.1" date="2023-01-27"/>
+		<release version="1.6.0" date="2022-12-24"/>
+		<release version="1.5.1" date="2022-10-28"/>
+		<release version="1.5.0" date="2022-10-21"/>
+		<release version="1.4.1" date="2022-08-05"/>
+		<release version="1.4.0" date="2022-08-05"/>
+		<release version="1.3.2" date="2022-06-10"/>
 	</releases>
-	<content_rating type="oars-1.1" />
+	<content_rating type="oars-1.1"/>
 	<update_contact>contact@linwood.dev</update_contact>
 </component>
