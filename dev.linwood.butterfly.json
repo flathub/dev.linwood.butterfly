@@ -77,8 +77,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.4.0-rc.1/linwood-butterfly-linux-x86_64.tar.gz",
-                    "sha256": "8654a3d8fe06573b0485d11477ba502c3a08f214383cd114489250519a2902f7",
+                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.4.0-rc.3/linwood-butterfly-linux-x86_64.tar.gz",
+                    "sha256": "26fe5bc188d9eb20061fcc6dd6a82cce76dd8ea614de7a942b857bc6bd8f7243",
                     "dest": "FlutterApp",
                     "only-arches": ["x86_64"],
                     "x-checker-data": {
@@ -90,8 +90,8 @@
                 },
                 {
                     "type": "archive",
-                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.4.0-rc.1/linwood-butterfly-linux-arm64.tar.gz",
-                    "sha256": "20a49d94a97f2b7669c9f37fbfe3da3020882eb9013d245d3783135577b12571",
+                    "url": "https://github.com/LinwoodDev/Butterfly/releases/download/v2.4.0-rc.3/linwood-butterfly-linux-arm64.tar.gz",
+                    "sha256": "503568c34049558f387e9af737392d535819b8c9069e28a93ccbcaf880425a91",
                     "dest": "FlutterApp",
                     "only-arches": ["aarch64"],
                     "x-checker-data": {
