@@ -1,7 +1,7 @@
 {
     "app-id": "dev.linwood.butterfly",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "butterfly",
     "separate-locales": false,
@@ -26,34 +26,6 @@
                     "type": "archive",
                     "url": "https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz",
                     "sha256": "f409856e5920c18d0c2fb85276e24ee607d2a09b5e7d5f0a371368903c275da2"
-                }
-            ]
-        },
-        {
-            "name": "libsecret",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dmanpage=false",
-                "-Dvapi=false",
-                "-Dgtk_doc=false",
-                "-Dintrospection=false"
-            ],
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/lib/pkgconfig",
-                "/share/man"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/0.21.7/libsecret-0.21.7.tar.gz",
-                    "sha256": "944d8a6072b6f285db40b8e9927dbe4dde81dcc7d177f84271fb167ccc297f65",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 13150,
-                        "url-template": "https://gitlab.gnome.org/GNOME/libsecret/-/archive/$version/libsecret-$version.tar.gz"
-                    }
                 }
             ]
         },
