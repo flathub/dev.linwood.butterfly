@@ -11,7 +11,7 @@
         "--socket=wayland",
         "--device=dri",
         "--share=network",
-        "--filesystem=xdg-documents/Linwood/Butterfly"
+        "--filesystem=xdg-documents/Linwood/Butterfly:create"
     ],
     "modules": [
         {
