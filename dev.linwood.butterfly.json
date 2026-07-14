@@ -11,6 +11,8 @@
         "--socket=wayland",
         "--device=dri",
         "--share=network",
+        "--talk-name=org.freedesktop.secrets",
+        "--system-talk-name=org.freedesktop.NetworkManager",
         "--filesystem=xdg-documents/Linwood/Butterfly:create"
     ],
     "modules": [
