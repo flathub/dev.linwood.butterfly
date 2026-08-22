@@ -13,7 +13,7 @@
         "--share=network",
         "--talk-name=org.freedesktop.secrets",
         "--system-talk-name=org.freedesktop.NetworkManager",
-        "--filesystem=xdg-documents/Linwood/Butterfly"
+        "--filesystem=xdg-documents/Linwood/Butterfly:create"
     ],
     "modules": [
         {
