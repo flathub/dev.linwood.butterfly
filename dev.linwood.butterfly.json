@@ -21,13 +21,20 @@
             "buildsystem": "meson",
             "config-opts": [
                 "--buildtype=release",
-                "--default-library=shared"
+                "--default-library=shared",
+                "-Dtests=disabled"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.5.tar.gz",
-                    "sha256": "f409856e5920c18d0c2fb85276e24ee607d2a09b5e7d5f0a371368903c275da2"
+                    "url": "https://github.com/open-source-parsers/jsoncpp/archive/refs/tags/1.9.8.tar.gz",
+                    "sha256": "82fce31c882fa4fc82dff10abbf4e7831cfff1a6a3c0ce4a5d503b8e41c20da6",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/open-source-parsers/jsoncpp/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": ".tarball_url"
+                    }
                 }
             ]
         },
@@ -35,14 +42,12 @@
             "name": "butterfly",
             "buildsystem": "simple",
             "build-commands": [
-                "cp -r FlutterApp /app/",
-                "chmod +x /app/FlutterApp/butterfly",
-                "mkdir -p /app/bin",
-                "ln -s /app/FlutterApp/butterfly /app/bin/butterfly",
+                "cp -r FlutterApp/* /app/",
+                "chmod +x /app/bin/butterfly",
                 "install -Dm644 dev.linwood.butterfly.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/dev.linwood.butterfly.svg",
-                "install -Dm644 /app/FlutterApp/usr/share/metainfo/dev.linwood.butterfly.appdata.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
-                "install -Dm644 /app/FlutterApp/usr/share/applications/dev.linwood.butterfly.desktop -t ${FLATPAK_DEST}/share/applications/",
-                "install -Dm644 /app/FlutterApp/usr/share/mime/packages/dev.linwood.butterfly.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml"
+                "install -Dm644 /app/share/metainfo/dev.linwood.butterfly.appdata.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.appdata.xml",
+                "install -Dm644 /app/share/applications/dev.linwood.butterfly.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop",
+                "install -Dm644 /app/share/mime/packages/dev.linwood.butterfly.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml"
             ],
             "sources": [
                 {
@@ -58,7 +63,7 @@
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/LinwoodDev/Butterfly/releases/latest",
-                        "version-query": ".tag_name",
+                        "version-query": ".tag_name | ltrimstr(\"v\")",
                         "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux-x86_64.tar.gz\") | .browser_download_url"
                     }
                 },
@@ -71,7 +76,7 @@
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/LinwoodDev/Butterfly/releases/latest",
-                        "version-query": ".tag_name",
+                        "version-query": ".tag_name | ltrimstr(\"v\")",
                         "url-query": ".assets[] | select(.name==\"linwood-butterfly-linux-arm64.tar.gz\") | .browser_download_url"
                     }
                 }
